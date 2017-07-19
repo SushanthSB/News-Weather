@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubHeader() should not get modified 1`] = `
+<div
+  className="jumbotron sub-header col-xs-12 col-sm-12 col-md-12 col-lg-12"
+>
+  <p>
+     Get live headlines from 
+  </p>
+  <h1>
+    <div
+      className=""
+    />
+  </h1>
+</div>
+`;

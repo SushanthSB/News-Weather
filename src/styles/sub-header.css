@@ -1,0 +1,14 @@
+.sub-header {
+	margin-top :80px !important;
+	background-color: #5CC7B2;
+	border-color: #5CC7B2;
+	text-align: center;
+}
+.sub-header p {
+	font-size:50px;
+	color:#FFFFFF;
+}
+.sub-header h1{
+	color:#FFFFFF;
+	font-weight: bold;
+}

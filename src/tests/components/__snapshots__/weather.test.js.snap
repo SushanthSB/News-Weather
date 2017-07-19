@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weather renders without fail 1`] = `
+<div
+  className=""
+>
+  <h3
+    className="weather-brand"
+  >
+    Weather
+  </h3>
+  <div
+    className="jumbotron weather-div1 col-md-3 col-lg-3"
+  >
+    <div
+      className="city-name col-xs-12 col-sm-12 col-md-12 col-lg-12"
+    >
+      <h3 />
+    </div>
+    <div
+      className="weather-div2 col-xs-12 col-sm-12 col-md-12 col-lg-12"
+    >
+      <table
+        className="col-xs-12 col-sm-12 col-md-12 col-lg-12 weather-table"
+      >
+        <thead>
+          <tr>
+            <th
+              colSpan="2"
+            >
+              WEDNESDAY
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            className="temp"
+          >
+            <td
+              className="temp-img"
+              colSpan="2"
+            >
+              <img
+                src="http://openweathermap.org/img/w/04n.png"
+              />
+              <span>
+                22
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="temp-desc"
+          >
+            <td
+              colSpan="2"
+            >
+              sunny
+            </td>
+          </tr>
+          <tr
+            className="temp-rem"
+          >
+            <td>
+              Temp:
+            </td>
+            <td>
+              22.45
+              ℃ | 
+              72.41
+              ℉
+            </td>
+          </tr>
+          <tr
+            className="temp-rem"
+          >
+            <td>
+              Min|Max:
+            </td>
+            <td>
+              22
+              ℃ | 
+              23
+              ℃
+            </td>
+          </tr>
+          <tr
+            className="temp-rem"
+          >
+            <td>
+              Min|Max:
+            </td>
+            <td>
+              71.60
+              ℉ | 
+              73.40
+              ℉
+            </td>
+          </tr>
+          <tr
+            className="temp-rem"
+          >
+            <td>
+              Humidity
+            </td>
+            <td>
+              %
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heder should render without breaking 1`] = `
+<nav
+  className="navbar navbar-default navbar-fixed-top"
+>
+  <h1
+    className="brand"
+  >
+    Daily News
+  </h1>
+</nav>
+`;

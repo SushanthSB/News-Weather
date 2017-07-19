@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Array of sources should't alter 1`] = `
+Array [
+  "BBC News",
+  "The Hindu",
+  "The Times of India",
+  "The Wall Street Journal",
+  "BBC Sport",
+  "MTV News",
+  "IGN",
+]
+`;

@@ -1,0 +1,38 @@
+.news-title {
+	font-weight: bold;
+	font-size: 20px;
+	padding: 10px 30px;
+}
+.news-body {
+	font-size: 15px;
+	text-indent: 50px !important;
+	padding: 10px 30px 40px 30px;
+}
+.news-group {
+	padding-top:5px;
+}
+.top-stories {
+	font-size:30px;
+}
+.news-default a {
+	color: initial;
+}
+.news-default a:hover {
+	text-decoration: none;
+	color:blue;
+	animation-name: paneldefaultA;
+	animation-duration: 0.3s;
+}
+.news-default:hover {
+	box-shadow : 0px 2px 5px grey; 
+	animation-name: paneldefault;
+	animation-duration: 0.3s;
+}
+@keyframes paneldefaultA {
+	from {color: initial;}
+	to{color: blue;}
+}
+@keyframes paneldefault {
+	from{box-shadow: initial}
+	to{box-shadow: 0px 2px 5px grey}
+}

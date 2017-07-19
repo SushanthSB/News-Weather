@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Data shouldn't change 1`] = `
+Array [
+  Object {
+    "id": 1,
+    "name": "General",
+  },
+  Object {
+    "id": 2,
+    "name": "Politics",
+  },
+  Object {
+    "id": 3,
+    "name": "Business",
+  },
+  Object {
+    "id": 4,
+    "name": "Sports",
+  },
+  Object {
+    "id": 5,
+    "name": "Technology",
+  },
+  Object {
+    "id": 6,
+    "name": "Entertainment",
+  },
+  Object {
+    "id": 7,
+    "name": "Music",
+  },
+  Object {
+    "id": 8,
+    "name": "Gaming",
+  },
+]
+`;
