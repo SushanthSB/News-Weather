@@ -1,9 +1,21 @@
+--News-Weather <br/>
+Get latest news from top news websites and weather updates for your locality.
+>> git clone <br/>
+>> git install <br/>
+>> git run start <br/>
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-Below you will find some information on how to perform common tasks.<br>
+-- Below you will find some information on how to perform common tasks.<br>
+
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
-## Table of Contents
+**important - if you get ENOSPC error after installing new libraries(in Linux) use this command to fix the issue: 
+  1)For Debian, RedHat, or another similar Linux distribution- "echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p"
+  2)For Arch linux - "echo fs.inotify.max_user_watches=524288 | sudo tee /etc/sysctl.d/40-max-user-watches.conf && sudo sysctl --system"
+  For details about this issue refer link- https://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers
+
+--Table of Contents
 
 - [Updating to New Releases](#updating-to-new-releases)
 - [Sending Feedback](#sending-feedback)
