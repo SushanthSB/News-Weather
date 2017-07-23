@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/news.css';
 import PropTypes from 'prop-types';
  
+ //News component- Fetches and displays news.
 const News = (props) => {
 
 	const news = () => {

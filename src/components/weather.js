@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/weather.css';
 import PropTypes from 'prop-types';
 
+//weather component that fetches and diplays weather 
 export const celToFar = (val) => {
 	return ((val*1.8+32).toFixed(2))
 }
