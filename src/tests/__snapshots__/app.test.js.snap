@@ -10,7 +10,26 @@ exports[`App() Should not get modified 1`] = `
     <h1
       className="header-brand"
     >
-      Daily News
+      <span>
+        Daily News
+      </span>
+      <span>
+        <button
+          className="navbar-toggle"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="icon-bar"
+          />
+          <div
+            className="icon-bar"
+          />
+          <div
+            className="icon-bar"
+          />
+        </button>
+      </span>
     </h1>
   </nav>
   <div
@@ -25,22 +44,33 @@ exports[`App() Should not get modified 1`] = `
       />
     </h1>
   </div>
-  <ul
-    className="nav nav-tabs"
+  <div
+    className="side-nav"
+    id="menu-bar"
   >
-    <li
-      className="not-active"
+    <span
+      className="side-nav-close"
       onClick={[Function]}
     >
-      <a />
-    </li>
-    <li
-      className="not-active"
-      onClick={[Function]}
+      ×
+    </span>
+    <ul
+      className="menu"
     >
-      <a />
-    </li>
-  </ul>
+      <li
+        className="not-active"
+        onClick={[Function]}
+      >
+        <a />
+      </li>
+      <li
+        className="not-active"
+        onClick={[Function]}
+      >
+        <a />
+      </li>
+    </ul>
+  </div>
   <ul
     className="nav nav-pills submenu"
   />
@@ -74,7 +104,7 @@ exports[`App() Should not get modified 1`] = `
     </div>
   </div>
   <div
-    className=""
+    className="sim"
   >
     <h3
       className="weather-brand"
@@ -100,7 +130,7 @@ exports[`App() Should not get modified 1`] = `
               <th
                 colSpan="2"
               >
-                WEDNESDAY
+                SUNDAY
               </th>
             </tr>
           </thead>
@@ -113,6 +143,7 @@ exports[`App() Should not get modified 1`] = `
                 colSpan="2"
               >
                 <img
+                  alt="sunny"
                   src="http://openweathermap.org/img/w/04n.png"
                 />
                 <span>

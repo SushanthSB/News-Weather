@@ -7,5 +7,20 @@
 		font-size: 30px;
 		padding: 10px 0px;
 		margin-left:150px;
+		/* #### Mobile Phones Portrait or Landscape #### */
+		@media screen and (max-width: 412px){
+			margin-left:5px;
+  			text-align: left;
+		}
+		@media screen and (min-width:500px) and (max-width:736px){
+			margin-left:20px;
+			text-align: left;
+		}
+	}
+	.navbar-toggle {
+		background-color: #5CC7B2;
+		&:hover {
+			background-color: initial;
+		}
 	}
 }

@@ -14,7 +14,7 @@ export const today = () => {
 
 export const Weather = (props) => {
 		return(
-				<div className=''>
+				<div className='sim'>
 				<h3 className='weather-brand'>Weather</h3>
 				<div className='jumbotron weather-div1 col-md-3 col-lg-3' >
 					<div className='city-name col-xs-12 col-sm-12 col-md-12 col-lg-12'>

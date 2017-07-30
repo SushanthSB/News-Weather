@@ -12,14 +12,34 @@ import News from './components/news';
 
 export class App extends React.Component {
   componentDidMount() {
-    this.props.weatherFetch()
+    this.props.weatherFetch() // Call weatherFetch() action to fetch weather on mount
+    const devWidth=(this.navElement.clientWidth) //Get navbar width
+    const margin = (Math.floor(devWidth/2)-60);//Animate brand name to center on scroll
+    if(devWidth > 736) { 
+      this.menuBarElement.className=""
+      this.menuElement.className="nav nav-tabs"
+      window.addEventListener('scroll',() => {
+          this.handleScroll(margin)
+        })
+    }
+  }
+
+  handleScroll(margin) {
+    if(window.pageYOffset >= 265) {
+      this.headerBrandElement.style.marginLeft=margin+"px"
+      this.headerBrandElement.style.transition="all 1s"; 
+    }
+    else {
+      this.headerBrandElement.style.marginLeft="150px"
+      this.headerBrandElement.style.transition="all 1s"; 
+    }
   }
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header headerBrandRef={(headerBrand) => this.headerBrandElement=headerBrand} navRef={(nav) => this.navElement = nav} />
         <SubHeader news_source={this.props.news_source} />
-        <Menu category={this.props.category} subCategory={this.props.subCategory} handleTerm={this.props.dataFetch} menu={this.props.menu} />
+        <Menu menuRef={(menu) => this.menuElement=menu} menuBar={(menuBar) => this.menuBarElement = menuBar} category={this.props.category} subCategory={this.props.subCategory} handleTerm={this.props.dataFetch} menu={this.props.menu} />
         <SubMenu subCategory={this.props.subCategory} menu={this.props.menu} handleTerm={this.props.dataFetch} />
         <News fetch={this.props.fetch} />
         <Weather weather={this.props.weather} />

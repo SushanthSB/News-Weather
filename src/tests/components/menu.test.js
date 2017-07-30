@@ -22,11 +22,6 @@ describe('Menu()',() => {
 		shallow(<Menu {...props} />);
 		expect(Menu.prototype.category.calledOnce).toEqual(true)
 	})
-
-	it('should render list elements',() => {
-		const wrapper = shallow(<Menu {...props} />)
-		expect(wrapper.children().type()).toEqual('li')
-	})
 	
 	it('should activate clicked class',() => {
 		let props = {
@@ -52,7 +47,6 @@ describe('Menu()',() => {
 			expect(Menu.prototype.handleClick.calledWith('General')).toEqual(true)
 		});
 	})
-	
 	it('calls componentDidMount',() => {
 		spy(Menu.prototype, 'componentDidMount');
 		mount(<Menu {...props} />);
