@@ -2,7 +2,7 @@
 
 exports[`Weather renders without fail 1`] = `
 <div
-  className=""
+  className="sim"
 >
   <h3
     className="weather-brand"
@@ -28,7 +28,7 @@ exports[`Weather renders without fail 1`] = `
             <th
               colSpan="2"
             >
-              WEDNESDAY
+              SUNDAY
             </th>
           </tr>
         </thead>
@@ -41,6 +41,7 @@ exports[`Weather renders without fail 1`] = `
               colSpan="2"
             >
               <img
+                alt="sunny"
                 src="http://openweathermap.org/img/w/04n.png"
               />
               <span>

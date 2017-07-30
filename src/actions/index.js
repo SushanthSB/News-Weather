@@ -7,7 +7,11 @@ export function dataFetch(term, subterm) {
 	//var url = axios.get('https://newsapi.org/v1/articles?source='+subterm.toLowerCase().replace(/ /g, "-")+'&sortBy=top&apiKey=9e576fda31f24e398aad8fb08270f59f')
 	return dispatch => {
 		dispatch({type:ACTIVATION, term: term, subterm: subterm})
-		return axios.get('https://newsapi.org/v1/articles?source='+subterm.toLowerCase().replace(/ /g, "-")+'&sortBy=top&apiKey=9e576fda31f24e398aad8fb08270f59f')
+		return axios({
+			method:'get',
+			url:'https://newsapi.org/v1/articles?source='+subterm.toLowerCase().replace(/ /g, "-")+'&sortBy=top&apiKey=9e576fda31f24e398aad8fb08270f59f',
+			
+		})
 		.then((response) => {
 			dispatch({type:FETCH, payload:response.data})
 		}).catch((err) => {

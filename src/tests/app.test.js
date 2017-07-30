@@ -4,6 +4,13 @@ import renderer from 'react-test-renderer'
 import { shallow, mount } from 'enzyme';
 import { spy } from 'sinon';
 
+function createNodeMock(element) {
+	//console.log(element.type)
+	if(element.type == 'nav') {
+		return 736
+	}
+	null;
+}
 describe("App()",() => {
 	let props = {
 		news_source: ['bbc-news','the-hindhu'],
@@ -21,7 +28,7 @@ describe("App()",() => {
 	}
 
 	it("Should not get modified",() => {
-		const tree = renderer.create(<App {...props} />).toJSON();
+		const tree = renderer.create(<App {...props} />, {createNodeMock}).toJSON();
 		expect(tree).toMatchSnapshot();
 	});
 	it("Should render without breaking",() => {
@@ -32,5 +39,7 @@ describe("App()",() => {
 		spy(App.prototype, "componentDidMount")
 		mount(<App {...props} />)
 		expect(App.prototype.componentDidMount.calledOnce).toEqual(true)
+	})
+	it("should calculate device width",() => {
 	})
 })
