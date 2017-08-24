@@ -9,9 +9,16 @@ const News = (props) => {
 		return (
 				props.fetch.data.map((news, index) => {
 					return (
-						<div className='panel panel-default news-default' key={index}>
-							<a href={news.url} ><div className='panel-heading news-title' > {news.title} </div>
-							<div className='panel-body news-body' > {news.description} </div></a>
+						<div className='panel panel-default news-default col-xs-12 col-sm-12 col-md-12 col-lg-12' key={index}>
+							<a href={news.url} className='col-xs-12 col-sm-12 col-md-12 col-lg-12' >
+								<div className='news-img col-xs-2 col-sm-2 col-md-2 col-lg-2' >
+									<img src={news.urlToImage} alt={news.urlToImage} />
+								</div>
+								<div className='col-xs-9 col-xs-offset-1 col-sm-9 col-md-9 col-lg-9' >
+									<div className='panel-heading news-title' > {news.title} </div>
+									<div className='panel-body news-body' > {news.description} </div>
+								</div>
+							</a>
 						</div>
 					)
 				})

@@ -28,7 +28,7 @@ exports[`Weather renders without fail 1`] = `
             <th
               colSpan="2"
             >
-              SUNDAY
+              THURSDAY
             </th>
           </tr>
         </thead>
